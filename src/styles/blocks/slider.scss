@@ -1,0 +1,41 @@
+.slider {
+  position: relative;
+  padding: 30px 0 50px 0;
+  height: 600px;
+  /*&:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: -webkit-gradient(linear,left top,right bottom,from(rgba(0,0,0,.05)),to(rgba(0,0,0,.05)));
+    background-image: -o-linear-gradient(left top,rgba(0,0,0,.05),rgba(0,0,0,.05));
+    background-image: linear-gradient(to right bottom,rgba(0,0,0,.05),rgba(0,0,0,.05));
+  }*/
+  &__heading {
+    font-family: $fontBold;
+    font-size: 6.4rem;
+    color: #2C467F;
+  }
+  &__description {
+    font-size: 3.6rem;
+  }
+  &__bg {
+    position: absolute;
+    //top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    & img {
+      width: 100%;
+      max-height: 600px;
+    }
+  }
+  &__btn {
+    margin-left: 100px;
+    margin-top: 150px;
+  }
+
+}

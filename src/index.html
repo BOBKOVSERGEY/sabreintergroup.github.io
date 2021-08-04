@@ -1,5 +1,162 @@
 ---
 layout: default
-title: Title
+title: SabreInterGroup
 ---
-Привет
+<header class="header">
+  <div class="container">
+    <a href="#" class="header__logo">
+      <img src="dist/images/logo.png" alt="SaberIntergroup">
+    </a>
+  </div>
+</header>
+<section class="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-10">
+        <div class="slider__content">
+          <h1 class="slider__heading">Сейбр Интергруп</h1>
+          <p class="slider__description">Оператор автоматизированной информационной системы оформления воздушных перевозок</p>
+          <button class="btn slider__btn">Связаться с нами</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider__bg">
+    <img src="dist/images/bg-slider.jpg" alt="">
+  </div>
+</section>
+<section class="solutions">
+  <div class="container">
+    <h2 class="solutions__heading">Наши решения</h2>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+          <i class="solutions__icon-1"></i>
+          <h2 class="solutions-item__title">SRS Прокси</h2>
+          <div class="solutions-item__anons">
+            Обработка потоков данных при взаимодействии с PSS (Passenger Service System) и её модулями и основными производственными системами авиакомпании.
+          </div>
+          <button class="btn btn-blue">О решении</button>
+        </a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+          <i class="solutions__icon-2"></i>
+          <h2 class="solutions-item__title">SRS Анонимайзер</h2>
+          <div class="solutions-item__anons solutions-item__anons_last">
+            Анонимизация персональных данных пассажиров, осуществляющих внутрироссийские рейсы.
+          </div>
+          <button class="btn btn-blue">О решении</button>
+        </a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="solutions-item__overlay">
+          <div class="row solutions-item__overlay-top">
+            <div class="col-md-3">
+              <img src="dist/images/solution-1-white.svg" alt="">
+            </div>
+            <div class="col-md-9">
+              <h2 class="solutions-item__overlay-heading">SRS Прокси</h2>
+            </div>
+          </div>
+          <div class="solutions-item__description">
+            Программное обеспечение, представляющее собой мини-платформу для перехвата, анализа и модификации данных. Выступая посредником между преднастроенными источниками и назначениями данных, SRS Прокси позволяет анализировать передаваемые данные и модифицировать их отдельные части согласно преднастроенным стратегиям.
+          </div>
+        </div>
+        <div class="solutions-item__content">
+          <h2 class="solutions-item__content-heading">Основной функционал</h2>
+          <ul class="solutions-item__content-ul">
+            <li>SRS Прокси — программное обеспечение, представляющее собой мини-платформу для перехвата, анализа и модификации данных. Выступая посредником между преднастроенными источниками и назначениями данных, SRS Прокси позволяет анализировать передаваемые данные и модифицировать их отдельные части согласно преднастроенным стратегиям, как подробнее указано ниже.</li>
+            <li>SRS Прокси принимает потоки данных на заданные в конфигурации порты. При получении входного пакета данных, SRS Прокси использует набор заданных в конфигурации правил и определяет компоненты стратегии, которые отвечают за анализ и модификацию запроса и ответа полученного пакета данных, а также адрес и порт назначения пакета. Стратегии могут иметь указание на протокол, URL, заголовки HTTP и прочие характеристики для определения типа входных пакетов данных для дальнейшей обработки.</li>
+            <li>После обработки входного пакета данных SRS Прокси направляет его по адресу и порту назначения, после чего ожидает дальнейшего ответа. При получении ответа компоненты стратегии обрабатывают его, и SRS Прокси направляет обработанный ответ источнику запроса.</li>
+            <li>В случае, когда SRS Прокси не может определить стратегии, отвечающие за анализ и модификацию полученного пакета данных, SRS Прокси пересылает запросы и ответы между источником и назначением пакета данных без какого-либо анализа и модификации, используя при этом наиболее эффективный алгоритм для пересылки.</li>
+            <li>Компоненты стратегии, отвечающие за анализ и модификацию запроса и ответа, не являются частью SRS Прокси, но могут быть загружены в него из библиотеки в формате JAR в процессе запуска SRS Прокси.</li>
+            <li>Альтернативно, SRS Прокси может быть использован как база для разработки производного программного обеспечения, которое будет объединять SRS Прокси и стратегии в одном модуле с целью простоты его развертывания и эксплуатации.</li>
+          </ul>
+          <h2 class="solutions-item__content-heading-next">Дополнительная информация</h2>
+          <div class="row solutions-item-download">
+            <div class="col-md-9">
+              <h2 class="solutions-item__content-heading">Файлы для скачивания</h2>
+              <ul class="solutions-item-download__ul">
+                <li>
+                  <div>
+                    Руководство по установке
+                  </div>
+                  <a href="#" class="btn btn-brown">download</a>
+                </li>
+                <li>
+                  <div>
+                    Руководство администратора и пользователя
+                  </div>
+                  <a href="#" class="btn btn-brown">download</a>
+                </li>
+                <li>
+                  <div>
+                    Функциональные характеристики ПО
+                  </div>
+                  <a href="#" class="btn btn-brown">download</a>
+                </li>
+                <li>
+                  <div>
+                    Файл конфигурации ПО SRS Прокси
+                  </div>
+                  <a href="#" class="btn btn-brown">download</a>
+                </li>
+                <li>
+                  <div>
+                    ПО SRS Прокси
+                  </div>
+                  <a href="#" class="btn btn-brown">download</a>
+                </li>
+                <li>
+                  <div>
+                    Служба для тестирования ПО SRS Прокси
+                  </div>
+                  <a href="#" class="btn btn-brown">download</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="solutions-item__pay-attention">
+          <div class="row solutions-item__pay-attention-dflex">
+            <div class="col-md-6">
+              <div class="solutions-item__pay-attention-heading">
+                <i class="solutions-item__pay-attention-i"></i>
+                <span>Внимание</span>
+              </div>
+              <p>Цена определяется под каждый проект отдельно</p>
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-border">получить консультацию <i></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="solutions-item__support">
+          <h2 class="solutions-item__content-heading">Техническая поддержка</h2>
+          <ul class="solutions-item__support-ul">
+            <li>ООО «Сэйбр Интегрупп»</li>
+            <li>Адрес: 115114, Москва, Дербеневская наб., 11А офис 412</li>
+            <li>Телефон 8 (800) 550-81-85</li>
+            <li>E-mail: info@sabreintergroup.ru</li>
+          </ul>
+          <button class="btn btn-blue solutions-item__support-btn">Связаться с нами</button>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
+    </div>
+  </div>
+</section>
+<section class="about">
+  <div class="container">
+    <h2 class="about__heading">ООО «Сейбр Интергрупп»</h2>
+    <p>Совместное предприятие, созданное Sabre GLBL и АО «Интегро Текнолоджиз», в рамках реализации проекта по исполнению требований постановления Правительства РФ № 955.</p>
+    <p>В соответствии с требованиями ПП № 955 все персональные данные пассажиров, осуществляющих внутрироссийские рейсы, должны храниться и обрабатываться на территории Российской Федерации, при этом оператором АИС ОВП (далее — ИС), обеспечивающей обработку и хранение персональный данных, должно выступать юридическое лицо — резидент РФ.</p>
+    <p>В соответствии с концепцией, разработанной Sabre GLBL и АО «Интегро Текнолоджиз», ООО «Сейбр Интрерупп» осуществляет разработку и внедрение ИС, используя которую ПАО «Аэрофлот» сможет обеспечить соответствие требованиям ПП № 955. Также, в соответствии с концепцией, ООО «Сейбр Интергрупп» будет являться оператором ИС.</p>
+    <p>В ходе разработки своих решений компания использует лучшие мировые практики в области автоматизации деятельности авиакомпаний.</p>
+    <button class="btn btn-blue about__btn">Связаться с нами</button>
+  </div>
+</section>

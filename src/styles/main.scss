@@ -2,8 +2,20 @@
 @import "fonts/segoeui";
 @import "base/base";
 
-/***components***/
+
+/***vendors***/
 @import "vendors/bootstrap";
 //@import "vendors/swiper";
+
+/***components***/
+@import "components/buttons";
+@import "components/tabs";
+
+
+/*blocks*/
+@import "blocks/header";
+@import "blocks/slider";
+@import "blocks/solutions";
+@import "blocks/about";
 
 
