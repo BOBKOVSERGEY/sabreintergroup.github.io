@@ -1,0 +1,1 @@
+"use strict";document.addEventListener("DOMContentLoaded",function(){new Swiper(".slider-main__container",{spaceBetween:30,pagination:{el:".swiper-pagination",clickable:!0}})});
