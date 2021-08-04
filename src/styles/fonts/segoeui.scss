@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: local('SegoeUIRegular'), url(../fonts/segoeui/SegoeUIRegular.woff2) format('woff2'),
+  url("../fonts/segoeui/SegoeUIRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SegoeUILight";
+  src: local('SegoeUILight'), url(../fonts/segoeui/SegoeUILight.woff2) format('woff2'),
+  url("../fonts/segoeui/SegoeUILight.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SegoeUIBold";
+  src: local('SegoeUIBold'), url(../fonts/segoeui/SegoeUIBold.woff2) format('woff2'),
+  url("../fonts/segoeui/SegoeUIBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
