@@ -1,10 +1,15 @@
 .solutions {
   padding: 80px 0;
+
   &__heading {
     font-family: $fontBold;
     font-size: 4.8rem;
     color: $primaryColor;
     margin-left: 100px;
+    @media only screen and (max-width: 480px) {
+      margin-left:0px;
+      font-size: 3.6rem;
+    }
   }
   &__icon-1 {
     width: 168px;
@@ -19,10 +24,28 @@
     background: url("../images/solution-2.svg") no-repeat center;
   }
   &-item {
+    &__hide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      cursor: pointer;
+      & i {
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        background: url("../images/hide.svg") no-repeat center;
+        margin-bottom: 10px;
+      }
+    }
     &__pay-attention {
       background: #696262;
       color: white;
       padding: 30px 80px;
+      @media only screen and (max-width: 768px) {
+        padding: 30px 30px;
+      }
       &-dflex {
         align-items: center;
       }
@@ -54,8 +77,16 @@
           border-top: 1px solid #696262;
           border-bottom: 1px solid #696262;
           min-height: 95px;
+          @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+          }
           & div:first-child {
             margin-right: 30px;
+            @media only screen and (max-width: 768px) {
+              margin: 0;
+              margin-bottom: 15px;
+            }
           }
         }
       }
@@ -63,6 +94,10 @@
     &__content {
       padding: 30px;
       background-color: white;
+      @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+
+      }
       &-heading {
         font-size: 2.4rem;
         color: $primaryColor;
@@ -72,6 +107,14 @@
           font-size: 3.6rem;
           color: $primaryColor;
           margin-bottom: 15px;
+          @media only screen and (max-width: 768px) {
+            font-size: 3.2rem;
+
+          }
+          @media only screen and (max-width: 374px) {
+            font-size: 2.8rem;
+
+          }
         }
       }
       &-ul {
@@ -79,6 +122,7 @@
           padding-left: 50px;
           position: relative;
           margin-bottom: 30px;
+
           &:before {
             content: '';
             width: 16px;
@@ -90,21 +134,33 @@
             left: 0;
             border-radius: 50%;
           }
+
         }
       }
     }
     &__support {
       padding: 50px 80px;
       background-color: white;
+      @media only screen and (max-width: 768px) {
+        padding: 50px 30px;
+      }
       &-btn {
         margin-top: 30px;
         margin-left: 50px;
+        @media only screen and (max-width: 768px) {
+          font-size: 2rem;
+          margin-left: 0;
+        }
       }
       &-ul {
         & li {
           padding-left: 50px;
           position: relative;
           margin-bottom: 15px;
+          @media only screen and (max-width: 768px) {
+            font-size: 2rem;
+            padding-left: 30px;
+          }
           &:before {
             content: '';
             width: 16px;
@@ -117,6 +173,13 @@
             border-radius: 50%;
             transform: translate(0, -50%);
           }
+          & a {
+            color: #333;
+            transition: all .3s;
+            &:hover {
+              color: lighten(#333, 25%);
+            }
+          }
         }
       }
     }
@@ -125,11 +188,14 @@
       background: $primaryColor;
       color: white;
       position: relative;
+      @media only screen and (max-width: 768px) {
+        padding: 50px 30px;
+      }
       &:before {
         content: '';
         position: absolute;
-        top: -100px;
-        left: -100px;
+        top: -101px;
+        left: -101px;
         border: 100px solid transparent; /* Прозрачные границы */
         border-bottom: 100px solid #F0F2F2; /* Добавляем треугольник */
         transform: rotate(-45deg);
@@ -139,19 +205,44 @@
         font-family: $fontBold;
         font-size: 48px;
         text-align: center;
+        @media only screen and (max-width: 768px) {
+          font-size: 3.2rem;
+          margin-top: 30px;
+        }
       }
       &-top {
         align-items: center;
+
+        &-img {
+          @media only screen and (max-width: 768px) {
+            text-align: center;
+
+          }
+          & img {
+            @media only screen and (max-width: 768px) {
+              width: 200px;
+
+            }
+
+          }
+        }
       }
     }
     &__description {
       margin-top: 30px;
+      @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+
+      }
     }
     &__title {
       font-family: $fontBold;
       font-size: 3.6rem;
       color: #4F4F4F;
       margin: 30px 0 0 0;
+      @media only screen and (max-width: 992px) {
+        font-size: 3.2rem;
+      }
     }
     &__anons {
       position: relative;
@@ -178,6 +269,9 @@
           height: 130px;
           width: 2px;
           background: #828282;
+          @media only screen and (max-width: 768px) {
+            opacity: 0;
+          }
         }
       }
     }

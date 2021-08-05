@@ -1,7 +1,16 @@
 .slider {
   position: relative;
   padding: 30px 0 50px 0;
-  height: 600px;
+  height: 650px;
+  @media only screen and (max-width: 1400px) {
+    height: 550px;
+  }
+  @media only screen and (max-width: 1200px) {
+    height: 500px;
+  }
+  @media only screen and (max-width: 992px) {
+    height: 450px;
+  }
   /*&:before {
     content: '';
     position: absolute;
@@ -17,9 +26,25 @@
     font-family: $fontBold;
     font-size: 6.4rem;
     color: #2C467F;
+    @media only screen and (max-width: 768px) {
+      font-size: 3.6rem;
+    }
+    @media only screen and (max-width: 374px) {
+      font-size: 2.6rem;
+    }
   }
   &__description {
-    font-size: 3.6rem;
+
+    @media only screen and (max-width: 992px) {
+      font-size: 3.2rem;
+    }
+    @media only screen and (max-width: 768px) {
+      font-size: 2.6rem;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 2.2rem;
+    }
+
   }
   &__bg {
     position: absolute;
@@ -36,6 +61,10 @@
   &__btn {
     margin-left: 100px;
     margin-top: 150px;
+    @media only screen and (max-width: 1200px) {
+      margin-left: 0;
+      margin-top: 30px;
+    }
   }
 
 }

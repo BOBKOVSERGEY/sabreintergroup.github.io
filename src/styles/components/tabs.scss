@@ -11,6 +11,9 @@
 }
 .nav-item {
   width: 50%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .nav-link {
@@ -66,7 +69,7 @@
 }
 
 .nav-pills .nav-link {
-  border-radius: 32px 32px 0 32px;
+  border-radius: 32px 32px 0 0;
   padding: 25px 25px 50px 25px;
 }
 

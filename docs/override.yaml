@@ -1,0 +1,9 @@
+anonymizer:
+  routes:
+    - name: 'Test'
+      ingressPort: 2220
+      resolver: 'Generic'
+      services:
+        - name: 'Hello World'
+          baseUrl: 'http://localhost:9000'
+          path: '/'

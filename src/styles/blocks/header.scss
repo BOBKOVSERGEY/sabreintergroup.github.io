@@ -1,9 +1,19 @@
 .header {
   padding: 30px 0 15px 0;
+  background: #F0F2F2;
+  @media only screen and (max-width: 768px) {
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
   &__logo {
     display: inline-block;
     & img {
       max-width: 200px;
+      @media only screen and (max-width: 480px) {
+        max-width: 134px;
+      }
     }
 
   }

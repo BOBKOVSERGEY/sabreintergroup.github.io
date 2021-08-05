@@ -1,0 +1,14 @@
+.contacts {
+  padding: 80px 0 ;
+  &__heading {
+    font-family: $fontBold;
+    font-size: 4.8rem;
+    color: $primaryColor;
+
+  }
+  &__company-heading {
+    font-size: 2.4rem;
+    color: $primaryColor;
+    margin: 30px 0;
+  }
+}

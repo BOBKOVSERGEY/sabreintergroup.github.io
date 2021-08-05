@@ -28,9 +28,9 @@
         <div class="row">
           <div class="col-10">
             <div class="slider__content">
-              <h1 class="slider__heading">Сейбр Интергруп</h1>
+              <h1 class="slider__heading">Сейбр Интегрупп</h1>
               <p class="slider__description">Оператор автоматизированной информационной системы оформления воздушных перевозок</p>
-              <button class="btn slider__btn">Связаться с нами</button>
+              <button class="btn slider__btn" data-custom-scroll-to="contacts">Связаться с нами</button>
             </div>
           </div>
         </div>
@@ -39,28 +39,28 @@
         <img src="dist/images/bg-slider.jpg" alt="">
       </div>
     </section>
-    <section class="solutions">
+    <section class="solutions" id="solutions">
       <div class="container">
         <h2 class="solutions__heading">Наши решения</h2>
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+            <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" data-custom-scroll-to="pills-tabContent">
               <i class="solutions__icon-1"></i>
               <h2 class="solutions-item__title">SRS Прокси</h2>
               <div class="solutions-item__anons">
                 Обработка потоков данных при взаимодействии с PSS (Passenger Service System) и её модулями и основными производственными системами авиакомпании.
               </div>
-              <button class="btn btn-blue">О решении</button>
+              <button class="btn btn-blue" data-custom-scroll-to="pills-tabContent">О решении</button>
             </a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" data-custom-scroll-to="pills-tabContent">
               <i class="solutions__icon-2"></i>
               <h2 class="solutions-item__title">SRS Анонимайзер</h2>
               <div class="solutions-item__anons solutions-item__anons_last">
                 Анонимизация персональных данных пассажиров, осуществляющих внутрироссийские рейсы.
               </div>
-              <button class="btn btn-blue">О решении</button>
+              <button class="btn btn-blue" data-custom-scroll-to="pills-tabContent">О решении</button>
             </a>
           </li>
         </ul>
@@ -69,7 +69,10 @@
             <div class="solutions-item__overlay">
               <div class="row solutions-item__overlay-top">
                 <div class="col-md-3">
-                  <img src="dist/images/solution-1-white.svg" alt="">
+                  <div class="solutions-item__overlay-top-img">
+                    <img src="dist/images/solution-1-white.svg" alt="">
+                  </div>
+    
                 </div>
                 <div class="col-md-9">
                   <h2 class="solutions-item__overlay-heading">SRS Прокси</h2>
@@ -88,6 +91,115 @@
                 <li>В случае, когда SRS Прокси не может определить стратегии, отвечающие за анализ и модификацию полученного пакета данных, SRS Прокси пересылает запросы и ответы между источником и назначением пакета данных без какого-либо анализа и модификации, используя при этом наиболее эффективный алгоритм для пересылки.</li>
                 <li>Компоненты стратегии, отвечающие за анализ и модификацию запроса и ответа, не являются частью SRS Прокси, но могут быть загружены в него из библиотеки в формате JAR в процессе запуска SRS Прокси.</li>
                 <li>Альтернативно, SRS Прокси может быть использован как база для разработки производного программного обеспечения, которое будет объединять SRS Прокси и стратегии в одном модуле с целью простоты его развертывания и эксплуатации.</li>
+              </ul>
+              <h2 class="solutions-item__content-heading-next">Дополнительная информация</h2>
+              <div class="row solutions-item-download">
+                <div class="col-md-9">
+                  <h2 class="solutions-item__content-heading">Файлы для скачивания</h2>
+                  <ul class="solutions-item-download__ul">
+                    <li>
+                      <div>
+                        Руководство по установке
+                      </div>
+                      <a href="docs/installation-guide.pdf" target="_blank" class="btn btn-brown">download</a>
+                    </li>
+                    <li>
+                      <div>
+                        Руководство администратора и пользователя
+                      </div>
+                      <a href="docs/administrator-and-user-guide.pdf" target="_blank" class="btn btn-brown">download</a>
+                    </li>
+                    <li>
+                      <div>
+                        Функциональные характеристики ПО
+                      </div>
+                      <a href="docs/functional-characteristics-of-the-software.pdf" target="_blank" class="btn btn-brown">download</a>
+                    </li>
+                    <li>
+                      <div>
+                        Описание жизненного цикла SRS PROXY
+                      </div>
+                      <a href="docs/srs-proxy-life-cycle.pdf" target="_blank" class="btn btn-brown">download</a>
+                    </li>
+                    <li>
+                      <div>
+                        Файл конфигурации ПО SRS Прокси
+                      </div>
+                      <a href="docs/override.yaml" target="_blank" class="btn btn-brown">download</a>
+                    </li>
+                    <li>
+                      <div>
+                        ПО SRS Прокси
+                      </div>
+                      <a href="docs/http-proxy-1.0.0.jar" target="_blank" class="btn btn-brown">download</a>
+                    </li>
+                    <li>
+                      <div>
+                        Служба для тестирования ПО SRS Прокси
+                      </div>
+                      <a href="docs/hello-service.jar" target="_blank" class="btn btn-brown">download</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+            </div>
+            <div class="solutions-item__pay-attention">
+              <div class="row solutions-item__pay-attention-dflex">
+                <div class="col-md-6">
+                  <div class="solutions-item__pay-attention-heading">
+                    <i class="solutions-item__pay-attention-i"></i>
+                    <span>Внимание</span>
+                  </div>
+                  <p>Цена определяется под каждый проект отдельно</p>
+                </div>
+                <div class="col-md-6">
+                  <button class="btn btn-border" data-custom-scroll-to="contacts">получить консультацию <i></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="solutions-item__support">
+              <h2 class="solutions-item__content-heading">Техническая поддержка</h2>
+              <ul class="solutions-item__support-ul">
+                <li>ООО «Сейбр Интегрупп»</li>
+                <li>Адрес: 115114, Москва, Дербеневская наб., 11А офис 412</li>
+                <li>Телефон: 8 (800) 550-81-85</li>
+                <li>E-mail: info@sabreintergroup.ru</li>
+              </ul>
+              <button class="btn btn-blue solutions-item__support-btn" data-custom-scroll-to="contacts">Связаться с нами</button>
+              <div class="solutions-item__hide" data-custom-scroll-to="solutions">
+                <i></i>
+                <span>Свернуть</span>
+              </div>
+            </div>
+    
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="solutions-item__overlay">
+              <div class="row solutions-item__overlay-top">
+                <div class="col-md-3">
+                  <div class="solutions-item__overlay-top-img">
+                    <img src="dist/images/solution-2-white.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <h2 class="solutions-item__overlay-heading">SRS Анонимайзер </h2>
+                </div>
+              </div>
+              <div class="solutions-item__description">
+                Программное обеспечение, представляющее собой набор стратегий для обработки сообщений ряда стандартных и частных протоколов, используемых в секторе коммерческой авиации и основанных на интернет-протоколе HTTP (SOAP, REST, HTML). Обработка состоит в идентификации, удалении (маскировании) и восстановлении персональных данных, содержащихся в таких сообщениях. SRS Анонимайзер реализует предметно-ориентированный язык (DSL) для упрощения работы с сообщениями и понижения требований к квалификации персонала, обслуживающего и дополняющего SRS Анонимайзер.
+              </div>
+            </div>
+            <!--<div class="solutions-item__content">
+              <h2 class="solutions-item__content-heading">Основной функционал</h2>
+              <ul class="solutions-item__content-ul">
+                <li>Управление процессами на различных этапах взыскания (особое внимание уделяется этапу Soft-Collection, на котором разрешаются до 90% случаев просроченной задолженности;</li>
+                <li>Консолидация данных о должниках из различных источников;</li>
+                <li>Хранение информации о должниках — физических и юридических лицах;</li>
+                <li>Разграничение доступа к данным;</li>
+                <li>Управление стратегиями с учетом различных параметров должников и объемов задолженности;</li>
+                <li>Организация работы выездных бригад и выпуск отчетности (решение может быть интегрировано с системой аналитической отчетности).</li>
+    
               </ul>
               <h2 class="solutions-item__content-heading-next">Дополнительная информация</h2>
               <div class="row solutions-item-download">
@@ -134,7 +246,7 @@
                 </div>
               </div>
     
-            </div>
+            </div>-->
             <div class="solutions-item__pay-attention">
               <div class="row solutions-item__pay-attention-dflex">
                 <div class="col-md-6">
@@ -145,37 +257,90 @@
                   <p>Цена определяется под каждый проект отдельно</p>
                 </div>
                 <div class="col-md-6">
-                  <button class="btn btn-border">получить консультацию <i></i></button>
+                  <button class="btn btn-border" data-custom-scroll-to="contacts">получить консультацию <i></i></button>
                 </div>
               </div>
             </div>
             <div class="solutions-item__support">
               <h2 class="solutions-item__content-heading">Техническая поддержка</h2>
               <ul class="solutions-item__support-ul">
-                <li>ООО «Сэйбр Интегрупп»</li>
+                <li>ООО «Сейбр Интегрупп»</li>
                 <li>Адрес: 115114, Москва, Дербеневская наб., 11А офис 412</li>
-                <li>Телефон 8 (800) 550-81-85</li>
+                <li>Телефон: 8 (800) 550-81-85</li>
                 <li>E-mail: info@sabreintergroup.ru</li>
               </ul>
-              <button class="btn btn-blue solutions-item__support-btn">Связаться с нами</button>
+              <button class="btn btn-blue solutions-item__support-btn" data-custom-scroll-to="contacts">Связаться с нами</button>
+              <div class="solutions-item__hide" data-custom-scroll-to="solutions">
+                <i></i>
+                <span>Свернуть</span>
+              </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
         </div>
       </div>
     </section>
     <section class="about">
       <div class="container">
-        <h2 class="about__heading">ООО «Сейбр Интергрупп»</h2>
+        <h2 class="about__heading">ООО «Сейбр Интегрупп»</h2>
         <p>Совместное предприятие, созданное Sabre GLBL и АО «Интегро Текнолоджиз», в рамках реализации проекта по исполнению требований постановления Правительства РФ № 955.</p>
         <p>В соответствии с требованиями ПП № 955 все персональные данные пассажиров, осуществляющих внутрироссийские рейсы, должны храниться и обрабатываться на территории Российской Федерации, при этом оператором АИС ОВП (далее — ИС), обеспечивающей обработку и хранение персональный данных, должно выступать юридическое лицо — резидент РФ.</p>
         <p>В соответствии с концепцией, разработанной Sabre GLBL и АО «Интегро Текнолоджиз», ООО «Сейбр Интрерупп» осуществляет разработку и внедрение ИС, используя которую ПАО «Аэрофлот» сможет обеспечить соответствие требованиям ПП № 955. Также, в соответствии с концепцией, ООО «Сейбр Интергрупп» будет являться оператором ИС.</p>
         <p>В ходе разработки своих решений компания использует лучшие мировые практики в области автоматизации деятельности авиакомпаний.</p>
-        <button class="btn btn-blue about__btn">Связаться с нами</button>
+        <button class="btn btn-blue about__btn" data-custom-scroll-to="contacts">Связаться с нами</button>
       </div>
     </section>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__heading">Контакты</h2>
+        <h2 class="contacts__company-heading">ООО «Сейбр Интегрупп»</h2>
+        <ul class="solutions-item__support-ul">
+          <li>ООО «Сейбр Интегрупп»</li>
+          <li>Адрес: 115114, Москва, Дербеневская наб., 11А офис 412</li>
+          <li>Телефон: <a href="tel:8 (800) 550-81-85">8 (800) 550-81-85</a></li>
+          <li>E-mail: <a href="mailto:info@sabreintergroup.ru">info@sabreintergroup.ru</a></li>
+        </ul>
+        <div class="rd-google-map">
+          <div id="google-map" data-zoom="17" data-x="37.6508341" data-y="55.7208871" class="rd-google-map__model"></div>
+          <ul class="rd-google-map__locations">
+            <li data-x="37.6508341" data-y="55.7208871">
+              <h5>ООО «Сейбр Интегрупп»</h5>
+              <address class="contact-info">
+                <p>115114, Москва, Дербеневская наб., 11А офис 412</p>
+                <br>
+                <dl>
+                  <dd><a href="tel:88005508185"><i class="fa fa-phone" aria-hidden="true"></i>  8 (800) 550-81-85</a></dd>
+                </dl>
+                <dl>
+                  <dd><a href="mailto:info@sabreintergroup.ru"><i class="fa fa-envelope"></i> info@sabreintergroup.ru</a></dd>
+                </dl>
+                <dl>
+                  <dd><span>Время работы:<br>
+                    С понедельника по четверг с 09:00 до 18:00;<br>
+                    в пятницу с 09:00 до 17:00.</span></dd>
+                </dl>
+              </address>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer__wrap">
+          <div class="col-md-6">
+            <div class="footer__logo">
+              <img src="dist/images/logo-footer.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+              <div class="footer__copy">&copy; ООО “Сейбр Интегрупп”</div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
     <script src="dist/js/lib.js?v=1.0.0"></script>
+    <script type='text/javascript' src='//maps.google.com/maps/api/js?key=AIzaSyAbF547wmpRHA68yKJP62H7yha2Nzsilm8&#038;language=ru'></script>
     <script src="dist/js/main.js?v=1.0.0"></script>
 </body>
 </html>
