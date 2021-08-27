@@ -1,0 +1,13 @@
+anonymizer:
+  db-driver-class-name: org.postgresql.Driver
+  db-url: jdbc:postgresql://localhost:5432/postgres
+  db-username: postgres
+  db-password: admin        
+  routes:
+    - name: 'Test'
+      ingressPort: 2220
+      resolver: 'Generic'
+      services:
+        - name: 'Hello World'
+          baseUrl: 'http://localhost:9000'
+          path: '/'
